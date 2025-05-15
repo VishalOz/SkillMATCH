@@ -1,0 +1,63 @@
+:root {
+    --primary-color: #007bff;
+    --primary-color-hover: #0056b3;
+    --secondary-color: #6c757d; 
+    --error-color: rgb(229, 60, 60);
+    --success-color: #28a745;
+    --border-color: #ddd;
+    --input-border-color: #ccc;
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+}
+.body {
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.register-container {
+    max-width: 400px;
+    margin: 3rem auto;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--box-shadow-color);
+    font-family: sans-serif;
+}
+  
+.register-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+  
+.register-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    border: 1px solid var(--input-border-color);
+    font-size: 1rem;
+}
+  
+.register-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+  
+.register-container button:hover {
+    background-color: var(--primary-color-hover);
+}
+  
+.message {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+  
