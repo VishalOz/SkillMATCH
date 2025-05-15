@@ -6,6 +6,7 @@ function Register() {
     name: "",
     email: "",
     password: "",
+    role: "",
   });
   const [message, setMessage] = useState("");
 
@@ -28,7 +29,7 @@ function Register() {
 
       if (res.ok) {
         setMessage("Registration succesful!");
-        setFormData({ name: "", email: "", password: "" });
+        setFormData({ name: "", email: "", password: "", role: "" });
       } else {
         setMessage((data.error || "Registration failed"));
       }
@@ -46,6 +47,14 @@ function Register() {
           name="name"
           placeholder="Full Name"
           value={formData.name}
+          onChange={handleChange}
+          required
+        />
+        <input
+          type="text"
+          name="role"
+          placeholder="Role (e.g., Admin, User)"
+          value={formData.role}
           onChange={handleChange}
           required
         />
