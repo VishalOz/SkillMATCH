@@ -35,6 +35,8 @@ function Register() {
       }
     } catch (err) {
       setMessage("Server error");
+      console.error("Registration error:", err);
+
     }
   };
 
